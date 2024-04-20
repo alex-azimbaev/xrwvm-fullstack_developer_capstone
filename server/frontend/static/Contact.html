@@ -2,6 +2,27 @@
 <head>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        /* Custom class for a rounded border */
+        .rounded-custom {
+          border-radius: 50px; 
+          background-color: #ffffff; /* Assuming you want a white background */
+          border: 1px solid #cccccc; /* Light grey border; change as needed */
+         
+        }
+        .bold-left-border {
+          border-left: 3px solid #000; /* 3px bold right border, adjust color as needed */
+        }
+        .text-center {
+          text-align: center;
+        }
+        .text-blue {
+         color: #0056b3;
+        }
+        .small-text {
+          font-size: 1.1rem; 
+        }
+      </style>
 </head>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -27,7 +48,7 @@
   </nav>
   
   
-  <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 80%;margin: auto; margin-top:5%;">
+  <div class="card shadow p-3 mb-5 bg-white rounded-custom" style="width: 80%;margin: auto; margin-top:5%;">
     <div style="display: flex;flex-direction: column;">
         <div class="card" style="width: 60%;margin-top: 10px;align-self: center;">
            <img src="/static/cars.jpeg" class="card-img-top" alt="...">      
@@ -35,43 +56,39 @@
     </div>
 
     <div class="row"> 
-      <span class="border-bottom"></span>
-      <div class="col-md-6" style="width: 50%;">
-        <span class="border border-3"></span>
-        <div class="contact-item position-absolute bottom-90 end-50">
-            <img class="card-img-top" style="width: 70%;" src="/static/contactus.png" alt="Card image">
+      <div class="row"> 
+        <span class="border-bottom"></span>
+        <div class="display: flex;flex-direction: column;" style="width: 50%;">
+          <div  class="contact-item" style="width: 60%;margin-top: 10px;align-self: center;"> 
+           <img class="card-img-top" src="/static/contactus.png" alt="Card image">
+          </div>
         </div>
-      </div>
+      
 
-      <div class="col-md-6" style="width: 50%;">
+      <div class="col-md-6 mt-4 mb-4 bold-left-border" style="width: 50%;">
        
         <div class="contact-item">
-          <h5 class="text-primary">Contact Customer Service</h5>
-          <p class="text-primary">support@bestcars.com</p>
+          <h5 class="small-text text-blue text-center">Contact Customer Service</h5>
+          <p class="small-text text-blue text-center">support@bestcars.com</p>
         </div>
         <div class="contact-item">
-          <h5 class="text-primary">Contact our National Advertising team</h5>
-          <p class="text-primary">NationalSales@bestcars.com</p>
+          <h5 class="small-text text-blue text-center">Contact our National Advertising team</h5>
+          <p class="small-text text-blue text-center">NationalSales@bestcars.com</p>
         </div>
         <div class="contact-item">
-          <h5 class="text-primary">Contact our Public Relations team</h5>
-          <p class="text-primary">PR@bestcars.com</p>
+          <h5 class="small-text text-blue text-center">Contact our Public Relations team</h5>
+          <p class="small-text text-blue text-center">PR@bestcars.com</p>
         </div>
         <div class="contact-item">
-          <h5 class="text-primary">Contact the bestcar.com offices</h5>
-          <p class="text-primary">Phone: 312-611-1111</p>
+          <h5 class="small-text text-blue text-center">Contact the bestcar.com offices</h5>
+          <p class="small-text text-blue text-center">Phone: 312-611-1111</p>
         </div>
         <div class="contact-item">
-          <h5 class="text-primary">Become a bestcar.com car dealer</h5>
-          <p class="text-primary">Visit growwithbestcars.com</p>
+          <h5 class="small-text text-blue text-center">Become a bestcar.com car dealer</h5>
+          <p class="small-text text-blue text-center">Visit growwithbestcars.com</p>
         </div>
       </div>
     </div>
   </div>
-    
-
-    
-
 </div>
-
 </html>
